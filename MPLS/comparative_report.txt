@@ -1,0 +1,473 @@
+======================================================================
+REPORTE DE COMPARACIÓN DE CONFIGURACIONES
+======================================================================
+
+======================================================================
+Equipo : clab-MPLS-CPE-1
+Estado : DIFERENCIAS ENCONTRADAS
+Comandos faltantes:
+
+ - interface e0/1
+ - description Conexion con PE1
+ - ip address 10.0.1.2 255.255.255.252
+ - ipv6 add FC10::2/64
+ - no shutdown
+ - interface e0/2
+ - description Conexion con LAN
+ - ip address 192.168.10.1 255.255.255.0
+ - ipv6 address 2001:192:168:10::1/64
+ - no shutdown
+ - ip route 192.168.20.0 255.255.255.0 10.0.1.1
+ - ipv6 route 2001:192:168:20::/64 FC10::1
+
+======================================================================
+Equipo : clab-MPLS-CPE-2
+Estado : DIFERENCIAS ENCONTRADAS
+Comandos faltantes:
+
+ - interface e0/1
+ - description Conexion con PE2
+ - ip address 10.0.2.2 255.255.255.252
+ - ipv6 add FC20::2/64
+ - no shutdown
+ - interface e0/2
+ - description Conexion con LAN
+ - ip address 192.168.20.1 255.255.255.0
+ - ipv6 address 2001:192:168:20::1/64
+ - no shutdown
+ - ip route 192.168.10.0 255.255.255.0 10.0.2.1
+ - ipv6 route 2001:192:168:10::/64 FC20::1
+
+======================================================================
+Equipo : clab-MPLS-P1
+Estado : DIFERENCIAS ENCONTRADAS
+Comandos faltantes:
+
+ - router bgp 100
+ - bgp router-id interface lo0
+ - no bgp default ipv4-unicast
+ - neighbor 172.16.1.5 remote-as 100
+ - neighbor 172.16.1.5 update-source lo0
+ - neighbor 172.16.1.6 remote-as 100
+ - neighbor 172.16.1.6 update-source lo0
+ - address-family ipv4 unicast
+ - neighbor 172.16.1.5 activate
+ - neighbor 172.16.1.6 activate
+ - router ospf 10
+ - network 172.16.1.4 0.0.0.0 area 0
+ - network 10.0.0.4 0.0.0.3 area 0
+ - network 10.0.0.16 0.0.0.3 area 0
+ - network 10.0.0.20 0.0.0.3 area 0
+ - network 10.0.0.24 0.0.0.3 area 0
+ - network 10.0.0.28 0.0.0.3 area 0
+ - interface lo0
+ - ip address 172.16.1.4 255.255.255.255
+ - mpls ip
+ - interface e0/1
+ - description Conexion con PE1
+ - ip address 10.0.0.6 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+ - interface e0/2
+ - description Conexion con RR1
+ - ip address 10.0.0.18 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+ - interface e0/3
+ - description Conexion con P2
+ - ip address 10.0.0.21 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+ - interface e1/0
+ - description Conexion con RR2
+ - ip address 10.0.0.25 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+ - interface e1/1
+ - description Conexion con PE2
+ - ip address 10.0.0.29 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+
+======================================================================
+Equipo : clab-MPLS-P2
+Estado : DIFERENCIAS ENCONTRADAS
+Comandos faltantes:
+
+ - router bgp 100
+ - bgp router-id interface lo0
+ - no bgp default ipv4-unicast
+ - neighbor 172.16.1.5 remote-as 100
+ - neighbor 172.16.1.5 update-source lo0
+ - neighbor 172.16.1.6 remote-as 100
+ - neighbor 172.16.1.6 update-source lo0
+ - address-family ipv4 unicast
+ - neighbor 172.16.1.5 activate
+ - neighbor 172.16.1.6 activate
+ - router ospf 10
+ - network 172.16.1.3 0.0.0.0 area 0
+ - network 10.0.0.8 0.0.0.3 area 0
+ - network 10.0.0.20 0.0.0.3 area 0
+ - network 10.0.0.32 0.0.0.3 area 0
+ - interface lo0
+ - ip address 172.16.1.3 255.255.255.255
+ - mpls ip
+ - interface e0/1
+ - description Conexion con PE1
+ - ip address 10.0.0.10 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+ - interface e0/2
+ - description Conexion con P1
+ - ip address 10.0.0.22 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+ - interface e0/3
+ - description Conexion con PE2
+ - ip address 10.0.0.33 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+
+======================================================================
+Equipo : clab-MPLS-PE1
+Estado : DIFERENCIAS ENCONTRADAS
+Comandos faltantes:
+
+ - router bgp 100
+ - bgp router-id interface lo0
+ - no bgp default ipv4-unicast
+ - neighbor 172.16.1.5 remote-as 100
+ - neighbor 172.16.1.5 update-source lo0
+ - neighbor 172.16.1.6 remote-as 100
+ - neighbor 172.16.1.6 update-source lo0
+ - address-family ipv4 unicast
+ - neighbor 172.16.1.5 activate
+ - neighbor 172.16.1.6 activate
+ - router ospf 10
+ - network 172.16.1.1 0.0.0.0 area 0
+ - network 10.0.0.0 0.0.0.3 area 0
+ - network 10.0.0.4 0.0.0.3 area 0
+ - network 10.0.0.8 0.0.0.3 area 0
+ - interface e1/0
+ - description Conexion con SW Acceso 1
+ - no shutdown
+ - interface e1/0.10
+ - description Conexion con Cliente A
+ - vrf forwarding A
+ - encapsulation dot1q 10
+ - ip address 10.0.1.1 255.255.255.252
+ - ipv6 address FC10::1/64
+ - no shutdown
+ - interface lo0
+ - ip address 172.16.1.1 255.255.255.255
+ - mpls ip
+ - interface e0/1
+ - description Conexion con RR1
+ - ip address 10.0.0.1 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+ - interface e0/2
+ - description Conexion con P1
+ - ip address 10.0.0.5 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+ - interface e0/3
+ - description Conexion con P2
+ - ip address 10.0.0.9 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+ - ip route vrf A 192.168.10.0 255.255.255.0 10.0.1.2
+ - ipv6 route vrf A 2001:192:168:10::/64 Ethernet1/0.10 FC10::2
+ - router bgp 100
+ - address-family vpnv4
+ - neighbor 172.16.1.5 activate
+ - neighbor 172.16.1.5 send-community both
+ - neighbor 172.16.1.6 activate
+ - neighbor 172.16.1.6 send-community both
+ - address-family vpnv6
+ - neighbor 172.16.1.5 activate
+ - neighbor 172.16.1.5 send-community extended
+ - neighbor 172.16.1.6 activate
+ - neighbor 172.16.1.6 send-community extended
+ - address-family ipv4 vrf A
+ - redistribute static
+ - address-family ipv6 vrf A
+ - redistribute static
+ - vrf definition A
+ - rd 10:10
+ - route-target both 10:10
+
+======================================================================
+Equipo : clab-MPLS-PE2
+Estado : DIFERENCIAS ENCONTRADAS
+Comandos faltantes:
+
+ - router bgp 100
+ - bgp router-id interface lo0
+ - no bgp default ipv4-unicast
+ - neighbor 172.16.1.5 remote-as 100
+ - neighbor 172.16.1.5 update-source Lo0
+ - neighbor 172.16.1.6 remote-as 100
+ - neighbor 172.16.1.6 update-source Lo0
+ - address-family ipv4 unicast
+ - neighbor 172.16.1.5 activate
+ - neighbor 172.16.1.6 activate
+ - router ospf 10
+ - network 172.16.1.2 0.0.0.0 area 0
+ - network 10.0.0.28 0.0.0.3 area 0
+ - network 10.0.0.32 0.0.0.3 area 0
+ - network 10.0.0.36 0.0.0.3 area 0
+ - interface e1/0
+ - description Conexion con SW Acceso 2
+ - no shutdown
+ - interface e1/0.10
+ - description Conexion con Cliente A
+ - vrf forwarding A
+ - encapsulation dot1q 10
+ - ip address 10.0.2.1 255.255.255.252
+ - ipv6 address FC20::1/64
+ - no shutdown
+ - interface lo0
+ - ip address 172.16.1.2 255.255.255.255
+ - mpls ip
+ - interface e0/1
+ - description Conexion con P1
+ - ip ospf network point-to-point
+ - ip address 10.0.0.30 255.255.255.252
+ - mpls ip
+ - no shutdown
+ - interface e0/2
+ - description Conexion con P2
+ - ip ospf network point-to-point
+ - ip address 10.0.0.34 255.255.255.252
+ - mpls ip
+ - no shutdown
+ - interface e0/3
+ - description Conexion con RR2
+ - ip ospf network point-to-point
+ - ip address 10.0.0.38 255.255.255.252
+ - no shutdown
+ - mpls ip
+ - mpls lsr-id 172.16.1.2
+ - mpls
+ - mpls ldp
+ - ip route vrf A 192.168.20.0 255.255.255.0 10.0.2.2
+ - ipv6 route vrf A 2001:192:168:20::/64 Ethernet1/0.10 FC20::2
+ - router bgp 100
+ - address-family vpnv4
+ - neighbor 172.16.1.5 activate
+ - neighbor 172.16.1.5 send-community both
+ - neighbor 172.16.1.6 activate
+ - neighbor 172.16.1.6 send-community both
+ - address-family vpnv6
+ - neighbor 172.16.1.5 activate
+ - neighbor 172.16.1.5 send-community extended
+ - neighbor 172.16.1.6 activate
+ - neighbor 172.16.1.6 send-community extended
+ - address-family ipv4 vrf A
+ - redistribute static
+ - address-family ipv6 vrf A
+ - redistribute static
+ - vrf definition A
+ - rd 10:10
+ - route-target both 10:10
+
+======================================================================
+Equipo : clab-MPLS-RR1
+Estado : DIFERENCIAS ENCONTRADAS
+Comandos faltantes:
+
+ - router bgp 100
+ - bgp router-id interface lo0
+ - no bgp default ipv4-unicast
+ - neighbor 172.16.1.6 remote-as 100
+ - neighbor 172.16.1.6 update-source lo0
+ - neighbor 172.16.1.1 remote-as 100
+ - neighbor 172.16.1.1 update-source lo0
+ - neighbor 172.16.1.2 remote-as 100
+ - neighbor 172.16.1.2 update-source lo0
+ - neighbor 172.16.1.3 remote-as 100
+ - neighbor 172.16.1.3 update-source lo0
+ - neighbor 172.16.1.4 remote-as 100
+ - neighbor 172.16.1.4 update-source lo0
+ - address-family ipv4 unicast
+ - neighbor 172.16.1.6 activate
+ - neighbor 172.16.1.1 activate
+ - neighbor 172.16.1.1 route-reflector-client
+ - neighbor 172.16.1.2 activate
+ - neighbor 172.16.1.2 route-reflector-client
+ - neighbor 172.16.1.3 activate
+ - neighbor 172.16.1.3 route-reflector-client
+ - neighbor 172.16.1.4 activate
+ - neighbor 172.16.1.4 route-reflector-client
+ - address-family vpnv4
+ - neighbor 172.16.1.6 activate
+ - neighbor 172.16.1.6 send-community both
+ - neighbor 172.16.1.1 activate
+ - neighbor 172.16.1.1 send-community both
+ - neighbor 172.16.1.1 route-reflector-client
+ - neighbor 172.16.1.2 activate
+ - neighbor 172.16.1.2 route-reflector-client
+ - neighbor 172.16.1.2 send-community both
+ - address-family vpnv6
+ - neighbor 172.16.1.6 activate
+ - neighbor 172.16.1.6 send-community extended
+ - neighbor 172.16.1.1 activate
+ - neighbor 172.16.1.1 send-community extended
+ - neighbor 172.16.1.1 route-reflector-client
+ - neighbor 172.16.1.2 activate
+ - neighbor 172.16.1.2 route-reflector-client
+ - neighbor 172.16.1.2 send-community extended
+ - router ospf 10
+ - network 172.16.1.5 0.0.0.0 area 0
+ - network 10.0.0.0 0.0.0.3 area 0
+ - network 10.0.0.12 0.0.0.3 area 0
+ - network 10.0.0.16 0.0.0.3 area 0
+ - interface lo0
+ - ip address 172.16.1.5 255.255.255.255
+ - mpls ip
+ - interface e0/1
+ - description Conexion con PE1
+ - ip address 10.0.0.2 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+ - interface e0/2
+ - description Conexion con P1
+ - ip address 10.0.0.17 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+ - interface e0/3
+ - description Conexion con RR2
+ - ip address 10.0.0.13 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+
+======================================================================
+Equipo : clab-MPLS-RR2
+Estado : DIFERENCIAS ENCONTRADAS
+Comandos faltantes:
+
+ - router bgp 100
+ - bgp router-id interface lo0
+ - no bgp default ipv4-unicast
+ - neighbor 172.16.1.5 remote-as 100
+ - neighbor 172.16.1.5 update-source lo0
+ - neighbor 172.16.1.1 remote-as 100
+ - neighbor 172.16.1.1 update-source lo0
+ - neighbor 172.16.1.2 remote-as 100
+ - neighbor 172.16.1.2 update-source lo0
+ - neighbor 172.16.1.3 remote-as 100
+ - neighbor 172.16.1.3 update-source lo0
+ - neighbor 172.16.1.4 remote-as 100
+ - neighbor 172.16.1.4 update-source lo0
+ - address-family ipv4 unicast
+ - neighbor 172.16.1.5 activate
+ - neighbor 172.16.1.1 activate
+ - neighbor 172.16.1.1 route-reflector-client
+ - neighbor 172.16.1.2 activate
+ - neighbor 172.16.1.2 route-reflector-client
+ - neighbor 172.16.1.3 activate
+ - neighbor 172.16.1.3 route-reflector-client
+ - neighbor 172.16.1.4 activate
+ - neighbor 172.16.1.4 route-reflector-client
+ - address-family vpnv4
+ - neighbor 172.16.1.5 activate
+ - neighbor 172.16.1.5 send-community both
+ - neighbor 172.16.1.1 activate
+ - neighbor 172.16.1.1 route-reflector-client
+ - neighbor 172.16.1.1 send-community both
+ - neighbor 172.16.1.2 activate
+ - neighbor 172.16.1.2 route-reflector-client
+ - neighbor 172.16.1.2 send-community both
+ - address-family vpnv6
+ - neighbor 172.16.1.5 activate
+ - neighbor 172.16.1.5 send-community extended
+ - neighbor 172.16.1.1 activate
+ - neighbor 172.16.1.1 route-reflector-client
+ - neighbor 172.16.1.1 send-community extended
+ - neighbor 172.16.1.2 activate
+ - neighbor 172.16.1.2 route-reflector-client
+ - neighbor 172.16.1.2 send-community extended
+ - router ospf 10
+ - network 172.16.1.6 0.0.0.0 area 0
+ - network 10.0.0.12 0.0.0.3 area 0
+ - network 10.0.0.24 0.0.0.3 area 0
+ - network 10.0.0.36 0.0.0.3 area 0
+ - interface lo0
+ - ip address 172.16.1.6 255.255.255.255
+ - mpls ip
+ - interface e0/1
+ - description Conexion con RR1
+ - ip address 10.0.0.14 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+ - interface e0/2
+ - description Conexion con P1
+ - ip address 10.0.0.26 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+ - interface e0/3
+ - description Conexion con PE2
+ - ip address 10.0.0.37 255.255.255.252
+ - ip ospf network point-to-point
+ - mpls ip
+ - no shutdown
+
+======================================================================
+Equipo : clab-MPLS-SW-1
+Estado : DIFERENCIAS ENCONTRADAS
+Comandos faltantes:
+
+ - vlan 10
+ - Cliente A
+ - interface e0/1
+ - description Conexion con PE1
+ - switchport trunk encapsulation dot1q
+ - switchport mode trunk
+ - switchport trunk allowed vlan add 10
+ - interface e0/2
+ - description Conexion con Cliente A
+ - switchport mode access
+ - switchport access vlan 10
+
+======================================================================
+Equipo : clab-MPLS-SW-2
+Estado : DIFERENCIAS ENCONTRADAS
+Comandos faltantes:
+
+ - vlan 10
+ - Cliente A
+ - interface e0/1
+ - description Conexion con PE2
+ - switchport trunk encapsulation dot1q
+ - switchport mode trunk
+ - switchport trunk allowed vlan add 10
+ - interface e0/2
+ - description Conexion con Cliente A
+ - switchport mode access
+ - switchport access vlan 10
+
+======================================================================
+clab-MPLS-SW-LAN-1
+No existe archivo de configuración.
+
+======================================================================
+clab-MPLS-SW-LAN-2
+No existe archivo de configuración.
+
