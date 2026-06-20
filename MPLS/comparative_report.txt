@@ -1,7 +1,7 @@
 ================================================================================
 REPORTE DE COMPARACIÓN PRE vs POST DESPLIEGUE ANSIBLE
 ================================================================================
-Fecha y Hora: 2026-06-20 03:34:18
+Fecha y Hora: 2026-06-20 04:41:36
 ================================================================================
 
 ESTADÍSTICAS GENERALES
@@ -9,7 +9,7 @@ ESTADÍSTICAS GENERALES
 Total de dispositivos: 12
 Dispositivos procesados correctamente: 12
 Dispositivos con error: 0
-Total de cambios detectados: 216
+Total de cambios detectados: 32
 
 ================================================================================
 ANÁLISIS POR DISPOSITIVO
@@ -43,301 +43,99 @@ LÍNEAS REMOVIDAS: Ninguna
 Dispositivo: clab-MPLS-P1
 Estado Pre-Despliegue: OK
 Estado Post-Despliegue: OK
-Líneas Pre-Despliegue: 55
+Líneas Pre-Despliegue: 87
 Líneas Post-Despliegue: 87
-Total de cambios: 33
+Total de cambios: 0
 
-LÍNEAS AGREGADAS POR ANSIBLE:
---------------------------------------------------------------------------------
- + neighbor 172.16.1.5 activate
- + neighbor 172.16.1.6 activate
- + bgp log-neighbor-changes
- + bgp router-id interface Loopback0
- + description Conexion con P2
- + description Conexion con PE1
- + description Conexion con PE2
- + description Conexion con RR1
- + description Conexion con RR2
- + ip address 10.0.0.18 255.255.255.252
- + ip address 10.0.0.21 255.255.255.252
- + ip address 10.0.0.25 255.255.255.252
- + ip address 10.0.0.29 255.255.255.252
- + ip address 10.0.0.6 255.255.255.252
- + ip address 172.16.1.4 255.255.255.255
- + ip ospf network point-to-point
- + mpls ip
- + neighbor 172.16.1.5 remote-as 100
- + neighbor 172.16.1.5 update-source Loopback0
- + neighbor 172.16.1.6 remote-as 100
- + neighbor 172.16.1.6 update-source Loopback0
- + network 10.0.0.16 0.0.0.3 area 0
- + network 10.0.0.20 0.0.0.3 area 0
- + network 10.0.0.24 0.0.0.3 area 0
- + network 10.0.0.28 0.0.0.3 area 0
- + network 10.0.0.4 0.0.0.3 area 0
- + network 172.16.1.4 0.0.0.0 area 0
- + no bgp default ipv4-unicast
- + Current configuration : 2688 bytes
- + interface Loopback0
- + router bgp 100
- + router ospf 10
+LÍNEAS AGREGADAS: Ninguna
 
-LÍNEAS REMOVIDAS POR ANSIBLE:
---------------------------------------------------------------------------------
- - Current configuration : 1543 bytes
+LÍNEAS REMOVIDAS: Ninguna
 
 ================================================================================
 Dispositivo: clab-MPLS-P2
 Estado Pre-Despliegue: OK
 Estado Post-Despliegue: OK
-Líneas Pre-Despliegue: 51
+Líneas Pre-Despliegue: 75
 Líneas Post-Despliegue: 75
-Total de cambios: 29
+Total de cambios: 0
 
-LÍNEAS AGREGADAS POR ANSIBLE:
---------------------------------------------------------------------------------
- + neighbor 172.16.1.5 activate
- + neighbor 172.16.1.6 activate
- + bgp log-neighbor-changes
- + bgp router-id interface Loopback0
- + description Conexion con P1
- + description Conexion con PE1
- + description Conexion con PE2
- + ip address 10.0.0.10 255.255.255.252
- + ip address 10.0.0.22 255.255.255.252
- + ip address 10.0.0.33 255.255.255.252
- + ip address 172.16.1.3 255.255.255.255
- + ip ospf network point-to-point
- + mpls ip
- + neighbor 172.16.1.5 remote-as 100
- + neighbor 172.16.1.5 update-source Loopback0
- + neighbor 172.16.1.6 remote-as 100
- + neighbor 172.16.1.6 update-source Loopback0
- + network 10.0.0.20 0.0.0.3 area 0
- + network 10.0.0.32 0.0.0.3 area 0
- + network 10.0.0.8 0.0.0.3 area 0
- + network 172.16.1.3 0.0.0.0 area 0
- + no bgp default ipv4-unicast
- + Current configuration : 2257 bytes
- + interface Loopback0
- + router bgp 100
- + router ospf 10
+LÍNEAS AGREGADAS: Ninguna
 
-LÍNEAS REMOVIDAS POR ANSIBLE:
---------------------------------------------------------------------------------
- - no ip address
- - shutdown
- - Current configuration : 1347 bytes
+LÍNEAS REMOVIDAS: Ninguna
 
 ================================================================================
 Dispositivo: clab-MPLS-PE1
 Estado Pre-Despliegue: OK
 Estado Post-Despliegue: OK
-Líneas Pre-Despliegue: 55
+Líneas Pre-Despliegue: 81
 Líneas Post-Despliegue: 81
-Total de cambios: 27
+Total de cambios: 0
 
-LÍNEAS AGREGADAS POR ANSIBLE:
---------------------------------------------------------------------------------
- + neighbor 172.16.1.5 activate
- + neighbor 172.16.1.6 activate
- + bgp log-neighbor-changes
- + bgp router-id interface Loopback0
- + description Conexion con P1
- + description Conexion con P2
- + description Conexion con RR1
- + ip address 10.0.0.1 255.255.255.252
- + ip address 10.0.0.5 255.255.255.252
- + ip address 10.0.0.9 255.255.255.252
- + ip address 172.16.1.1 255.255.255.255
- + ip ospf network point-to-point
- + mpls ip
- + neighbor 172.16.1.5 remote-as 100
- + neighbor 172.16.1.5 update-source Loopback0
- + neighbor 172.16.1.6 remote-as 100
- + neighbor 172.16.1.6 update-source Loopback0
- + network 10.0.0.0 0.0.0.3 area 0
- + network 10.0.0.4 0.0.0.3 area 0
- + network 10.0.0.8 0.0.0.3 area 0
- + network 172.16.1.1 0.0.0.0 area 0
- + no bgp default ipv4-unicast
- + Current configuration : 2448 bytes
- + interface Loopback0
- + router bgp 100
- + router ospf 10
+LÍNEAS AGREGADAS: Ninguna
 
-LÍNEAS REMOVIDAS POR ANSIBLE:
---------------------------------------------------------------------------------
- - Current configuration : 1544 bytes
+LÍNEAS REMOVIDAS: Ninguna
 
 ================================================================================
 Dispositivo: clab-MPLS-PE2
 Estado Pre-Despliegue: OK
 Estado Post-Despliegue: OK
-Líneas Pre-Despliegue: 55
-Líneas Post-Despliegue: 81
-Total de cambios: 27
+Líneas Pre-Despliegue: 81
+Líneas Post-Despliegue: 103
+Total de cambios: 24
 
 LÍNEAS AGREGADAS POR ANSIBLE:
 --------------------------------------------------------------------------------
- + neighbor 172.16.1.5 activate
- + neighbor 172.16.1.6 activate
- + bgp log-neighbor-changes
- + bgp router-id interface Loopback0
- + description Conexion con P1
- + description Conexion con P2
- + description Conexion con RR2
- + ip address 10.0.0.30 255.255.255.252
- + ip address 10.0.0.34 255.255.255.252
- + ip address 10.0.0.38 255.255.255.252
- + ip address 172.16.1.2 255.255.255.255
- + ip ospf network point-to-point
- + mpls ip
- + neighbor 172.16.1.5 remote-as 100
- + neighbor 172.16.1.5 update-source Loopback0
- + neighbor 172.16.1.6 remote-as 100
- + neighbor 172.16.1.6 update-source Loopback0
- + network 10.0.0.28 0.0.0.3 area 0
- + network 10.0.0.32 0.0.0.3 area 0
- + network 10.0.0.36 0.0.0.3 area 0
- + network 172.16.1.2 0.0.0.0 area 0
- + no bgp default ipv4-unicast
- + Current configuration : 2454 bytes
- + interface Loopback0
- + router bgp 100
- + router ospf 10
+ + neighbor 172.16.1.5 send-community both
+ + neighbor 172.16.1.5 send-community extended
+ + neighbor 172.16.1.6 send-community both
+ + neighbor 172.16.1.6 send-community extended
+ + redistribute static
+ + address-family ipv4 vrf A
+ + address-family ipv6 vrf A
+ + address-family vpnv4
+ + address-family vpnv6
+ + description Conexion con Cliente A
+ + description Conexion con SW Acceso 2
+ + encapsulation dot1Q 10
+ + ip address 10.0.2.1 255.255.255.252
+ + ipv6 address FC20::1/64
+ + rd 10:10
+ + route-target export 10:10
+ + route-target import 10:10
+ + vrf forwarding A
+ + Current configuration : 3472 bytes
+ + interface Ethernet1/0.10
+ + ip route vrf A 192.168.20.0 255.255.255.0 10.0.2.2
+ + ipv6 route vrf A 2001:192:168:20::/64 Ethernet1/0.10 FC20::2
+ + vrf definition A
 
 LÍNEAS REMOVIDAS POR ANSIBLE:
 --------------------------------------------------------------------------------
- - Current configuration : 1544 bytes
+ - Current configuration : 2454 bytes
 
 ================================================================================
 Dispositivo: clab-MPLS-RR1
 Estado Pre-Despliegue: OK
 Estado Post-Despliegue: OK
-Líneas Pre-Despliegue: 51
+Líneas Pre-Despliegue: 96
 Líneas Post-Despliegue: 96
-Total de cambios: 50
+Total de cambios: 0
 
-LÍNEAS AGREGADAS POR ANSIBLE:
---------------------------------------------------------------------------------
- + neighbor 172.16.1.1 activate
- + neighbor 172.16.1.1 route-reflector-client
- + neighbor 172.16.1.1 send-community both
- + neighbor 172.16.1.1 send-community extended
- + neighbor 172.16.1.2 activate
- + neighbor 172.16.1.2 route-reflector-client
- + neighbor 172.16.1.2 send-community both
- + neighbor 172.16.1.2 send-community extended
- + neighbor 172.16.1.3 activate
- + neighbor 172.16.1.3 route-reflector-client
- + neighbor 172.16.1.4 activate
- + neighbor 172.16.1.4 route-reflector-client
- + neighbor 172.16.1.6 activate
- + neighbor 172.16.1.6 send-community both
- + neighbor 172.16.1.6 send-community extended
- + address-family vpnv4
- + address-family vpnv6
- + bgp log-neighbor-changes
- + bgp router-id interface Loopback0
- + description Conexion con P1
- + description Conexion con PE1
- + description Conexion con RR2
- + ip address 10.0.0.13 255.255.255.252
- + ip address 10.0.0.17 255.255.255.252
- + ip address 10.0.0.2 255.255.255.252
- + ip address 172.16.1.5 255.255.255.255
- + ip ospf network point-to-point
- + mpls ip
- + neighbor 172.16.1.1 remote-as 100
- + neighbor 172.16.1.1 update-source Loopback0
- + neighbor 172.16.1.2 remote-as 100
- + neighbor 172.16.1.2 update-source Loopback0
- + neighbor 172.16.1.3 remote-as 100
- + neighbor 172.16.1.3 update-source Loopback0
- + neighbor 172.16.1.4 remote-as 100
- + neighbor 172.16.1.4 update-source Loopback0
- + neighbor 172.16.1.6 remote-as 100
- + neighbor 172.16.1.6 update-source Loopback0
- + network 10.0.0.0 0.0.0.3 area 0
- + network 10.0.0.12 0.0.0.3 area 0
- + network 10.0.0.16 0.0.0.3 area 0
- + network 172.16.1.5 0.0.0.0 area 0
- + no bgp default ipv4-unicast
- + Current configuration : 3493 bytes
- + interface Loopback0
- + router bgp 100
- + router ospf 10
+LÍNEAS AGREGADAS: Ninguna
 
-LÍNEAS REMOVIDAS POR ANSIBLE:
---------------------------------------------------------------------------------
- - no ip address
- - shutdown
- - Current configuration : 1349 bytes
+LÍNEAS REMOVIDAS: Ninguna
 
 ================================================================================
 Dispositivo: clab-MPLS-RR2
 Estado Pre-Despliegue: OK
 Estado Post-Despliegue: OK
-Líneas Pre-Despliegue: 51
+Líneas Pre-Despliegue: 96
 Líneas Post-Despliegue: 96
-Total de cambios: 50
+Total de cambios: 0
 
-LÍNEAS AGREGADAS POR ANSIBLE:
---------------------------------------------------------------------------------
- + neighbor 172.16.1.1 activate
- + neighbor 172.16.1.1 route-reflector-client
- + neighbor 172.16.1.1 send-community both
- + neighbor 172.16.1.1 send-community extended
- + neighbor 172.16.1.2 activate
- + neighbor 172.16.1.2 route-reflector-client
- + neighbor 172.16.1.2 send-community both
- + neighbor 172.16.1.2 send-community extended
- + neighbor 172.16.1.3 activate
- + neighbor 172.16.1.3 route-reflector-client
- + neighbor 172.16.1.4 activate
- + neighbor 172.16.1.4 route-reflector-client
- + neighbor 172.16.1.5 activate
- + neighbor 172.16.1.5 send-community both
- + neighbor 172.16.1.5 send-community extended
- + address-family vpnv4
- + address-family vpnv6
- + bgp log-neighbor-changes
- + bgp router-id interface Loopback0
- + description Conexion con P1
- + description Conexion con PE2
- + description Conexion con RR1
- + ip address 10.0.0.14 255.255.255.252
- + ip address 10.0.0.26 255.255.255.252
- + ip address 10.0.0.37 255.255.255.252
- + ip address 172.16.1.6 255.255.255.255
- + ip ospf network point-to-point
- + mpls ip
- + neighbor 172.16.1.1 remote-as 100
- + neighbor 172.16.1.1 update-source Loopback0
- + neighbor 172.16.1.2 remote-as 100
- + neighbor 172.16.1.2 update-source Loopback0
- + neighbor 172.16.1.3 remote-as 100
- + neighbor 172.16.1.3 update-source Loopback0
- + neighbor 172.16.1.4 remote-as 100
- + neighbor 172.16.1.4 update-source Loopback0
- + neighbor 172.16.1.5 remote-as 100
- + neighbor 172.16.1.5 update-source Loopback0
- + network 10.0.0.12 0.0.0.3 area 0
- + network 10.0.0.24 0.0.0.3 area 0
- + network 10.0.0.36 0.0.0.3 area 0
- + network 172.16.1.6 0.0.0.0 area 0
- + no bgp default ipv4-unicast
- + Current configuration : 3495 bytes
- + interface Loopback0
- + router bgp 100
- + router ospf 10
+LÍNEAS AGREGADAS: Ninguna
 
-LÍNEAS REMOVIDAS POR ANSIBLE:
---------------------------------------------------------------------------------
- - no ip address
- - shutdown
- - Current configuration : 1349 bytes
+LÍNEAS REMOVIDAS: Ninguna
 
 ================================================================================
 Dispositivo: clab-MPLS-SW-1
@@ -356,12 +154,22 @@ Dispositivo: clab-MPLS-SW-2
 Estado Pre-Despliegue: OK
 Estado Post-Despliegue: OK
 Líneas Pre-Despliegue: 55
-Líneas Post-Despliegue: 55
-Total de cambios: 0
+Líneas Post-Despliegue: 61
+Total de cambios: 8
 
-LÍNEAS AGREGADAS: Ninguna
+LÍNEAS AGREGADAS POR ANSIBLE:
+--------------------------------------------------------------------------------
+ + description Conexion con Cliente A
+ + description Conexion con PE2
+ + switchport access vlan 10
+ + switchport mode access
+ + switchport mode trunk
+ + switchport trunk encapsulation dot1q
+ + Current configuration : 1633 bytes
 
-LÍNEAS REMOVIDAS: Ninguna
+LÍNEAS REMOVIDAS POR ANSIBLE:
+--------------------------------------------------------------------------------
+ - Current configuration : 1446 bytes
 
 ================================================================================
 Dispositivo: clab-MPLS-SW-LAN-1
@@ -390,7 +198,7 @@ LÍNEAS REMOVIDAS: Ninguna
 ================================================================================
 RESUMEN FINAL
 ================================================================================
-Reporte generado: 2026-06-20 03:34:18
+Reporte generado: 2026-06-20 04:41:36
 Archivos de referencia:
   - PRE-Despliegue: config_pre_deployment.json
   - POST-Despliegue: config_post_deployment.json
