@@ -6,7 +6,7 @@ seccion-m.txt
 Estructura\ del\ Repositorio
 Topologias/Topologia-ISP.yml.annotations.json
 Topologias/clab-ISP-TDP-CLARO-IOL
-venv/
-__pycache__/
-
+clab-*/
+*.txt
+*.key
 __pycache__/

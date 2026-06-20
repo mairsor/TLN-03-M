@@ -1,0 +1,13 @@
+Dispositivo,Tipo,Status_Pre_Despliegue,Status_Post_Despliegue,Lineas_Pre,Lineas_Post,Total_Cambios,Lineas_Agregadas,Lineas_Removidas,Comandos_Encontrados,Comandos_Total,Porcentaje_Comandos,Estado_General
+clab-MPLS-CPE-1,router,OK,OK,51,51,0,0,0,1,4,25.0%,OK
+clab-MPLS-CPE-2,router,OK,OK,51,51,0,0,0,1,4,25.0%,OK
+clab-MPLS-P1,router,OK,OK,87,87,0,0,0,4,4,100.0%,OK
+clab-MPLS-P2,router,OK,OK,75,75,0,0,0,4,4,100.0%,OK
+clab-MPLS-PE1,router,OK,OK,81,81,0,0,0,4,4,100.0%,OK
+clab-MPLS-PE2,router,OK,OK,103,103,0,0,0,4,4,100.0%,OK
+clab-MPLS-RR1,router,OK,OK,96,96,0,0,0,4,4,100.0%,OK
+clab-MPLS-RR2,router,OK,OK,96,96,0,0,0,4,4,100.0%,OK
+clab-MPLS-SW-1,switch,OK,OK,55,55,0,0,0,2,5,40.0%,OK
+clab-MPLS-SW-2,switch,OK,OK,61,61,0,0,0,5,5,100.0%,OK
+clab-MPLS-SW-LAN-1,switch,OK,OK,55,55,0,0,0,2,5,40.0%,OK
+clab-MPLS-SW-LAN-2,switch,OK,OK,55,55,0,0,0,2,5,40.0%,OK

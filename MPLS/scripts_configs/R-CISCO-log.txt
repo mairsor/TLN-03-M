@@ -1,5 +1,12 @@
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> a569f9a227d8885c4155e26dd993316efd1cfa94
+>>>>>>> 5bdf36fa2cc745c2fab3bb7b462242912b2504bd
 PE2#
 PE2#terminal width 511
 PE2#terminal length 0

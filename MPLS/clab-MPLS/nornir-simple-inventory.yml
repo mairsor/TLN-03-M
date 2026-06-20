@@ -3,22 +3,54 @@ CPE-1:
     username: admin
     password: admin
     platform: cisco_iol
+<<<<<<< HEAD
     hostname: 172.20.20.7
+=======
+<<<<<<< HEAD
+    hostname: 172.20.20.15
+=======
+    hostname: 172.20.20.10
+>>>>>>> a569f9a227d8885c4155e26dd993316efd1cfa94
+>>>>>>> 5bdf36fa2cc745c2fab3bb7b462242912b2504bd
 CPE-2:
     username: admin
     password: admin
     platform: cisco_iol
+<<<<<<< HEAD
     hostname: 172.20.20.4
+=======
+<<<<<<< HEAD
+    hostname: 172.20.20.14
+=======
+    hostname: 172.20.20.15
+>>>>>>> a569f9a227d8885c4155e26dd993316efd1cfa94
+>>>>>>> 5bdf36fa2cc745c2fab3bb7b462242912b2504bd
 P1:
     username: admin
     password: admin
     platform: cisco_iol
+<<<<<<< HEAD
     hostname: 172.20.20.14
+=======
+<<<<<<< HEAD
+    hostname: 172.20.20.4
+=======
+    hostname: 172.20.20.8
+>>>>>>> a569f9a227d8885c4155e26dd993316efd1cfa94
+>>>>>>> 5bdf36fa2cc745c2fab3bb7b462242912b2504bd
 P2:
     username: admin
     password: admin
     platform: cisco_iol
+<<<<<<< HEAD
     hostname: 172.20.20.13
+=======
+<<<<<<< HEAD
+    hostname: 172.20.20.5
+=======
+    hostname: 172.20.20.3
+>>>>>>> a569f9a227d8885c4155e26dd993316efd1cfa94
+>>>>>>> 5bdf36fa2cc745c2fab3bb7b462242912b2504bd
 PE1:
     username: admin
     password: admin
@@ -28,7 +60,15 @@ PE2:
     username: admin
     password: admin
     platform: cisco_iol
+<<<<<<< HEAD
     hostname: 172.20.20.8
+=======
+<<<<<<< HEAD
+    hostname: 172.20.20.3
+=======
+    hostname: 172.20.20.5
+>>>>>>> a569f9a227d8885c4155e26dd993316efd1cfa94
+>>>>>>> 5bdf36fa2cc745c2fab3bb7b462242912b2504bd
 RR1:
     username: admin
     password: admin
@@ -38,34 +78,90 @@ RR2:
     username: admin
     password: admin
     platform: cisco_iol
+<<<<<<< HEAD
     hostname: 172.20.20.2
+=======
+<<<<<<< HEAD
+    hostname: 172.20.20.10
+=======
+    hostname: 172.20.20.12
+>>>>>>> a569f9a227d8885c4155e26dd993316efd1cfa94
+>>>>>>> 5bdf36fa2cc745c2fab3bb7b462242912b2504bd
 SW-1:
     username: admin
     password: admin
     platform: cisco_iol
+<<<<<<< HEAD
     hostname: 172.20.20.9
+=======
+<<<<<<< HEAD
+    hostname: 172.20.20.12
+=======
+    hostname: 172.20.20.6
+>>>>>>> a569f9a227d8885c4155e26dd993316efd1cfa94
+>>>>>>> 5bdf36fa2cc745c2fab3bb7b462242912b2504bd
 SW-2:
     username: admin
     password: admin
     platform: cisco_iol
+<<<<<<< HEAD
     hostname: 172.20.20.10
+=======
+<<<<<<< HEAD
+    hostname: 172.20.20.8
+=======
+    hostname: 172.20.20.7
+>>>>>>> a569f9a227d8885c4155e26dd993316efd1cfa94
+>>>>>>> 5bdf36fa2cc745c2fab3bb7b462242912b2504bd
 SW-LAN-1:
     username: admin
     password: admin
     platform: cisco_iol
+<<<<<<< HEAD
     hostname: 172.20.20.3
+=======
+<<<<<<< HEAD
+    hostname: 172.20.20.2
+=======
+    hostname: 172.20.20.11
+>>>>>>> a569f9a227d8885c4155e26dd993316efd1cfa94
+>>>>>>> 5bdf36fa2cc745c2fab3bb7b462242912b2504bd
 SW-LAN-2:
     username: admin
     password: admin
     platform: cisco_iol
+<<<<<<< HEAD
     hostname: 172.20.20.12
+=======
+<<<<<<< HEAD
+    hostname: 172.20.20.7
+=======
+    hostname: 172.20.20.14
+>>>>>>> a569f9a227d8885c4155e26dd993316efd1cfa94
+>>>>>>> 5bdf36fa2cc745c2fab3bb7b462242912b2504bd
 PC-LAN-1:
     username: 
     password: 
     platform: linux
+<<<<<<< HEAD
     hostname: 172.20.20.15
+=======
+<<<<<<< HEAD
+    hostname: 172.20.20.11
+=======
+    hostname: 172.20.20.4
+>>>>>>> a569f9a227d8885c4155e26dd993316efd1cfa94
+>>>>>>> 5bdf36fa2cc745c2fab3bb7b462242912b2504bd
 PC-LAN-2:
     username: 
     password: 
     platform: linux
+<<<<<<< HEAD
     hostname: 172.20.20.6
+=======
+<<<<<<< HEAD
+    hostname: 172.20.20.6
+=======
+    hostname: 172.20.20.2
+>>>>>>> a569f9a227d8885c4155e26dd993316efd1cfa94
+>>>>>>> 5bdf36fa2cc745c2fab3bb7b462242912b2504bd
