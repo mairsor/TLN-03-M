@@ -1,0 +1,20 @@
+Total de dispositivos: 12
+
+LISTADO DE DISPOSITIVOS:
+--------------------------------------------------------------------------------
+
+ROUTERS (8):
+  • clab-MPLS-CPE-1                | Imagen: vrnetlab/cisco_iol:17.12.1
+  • clab-MPLS-CPE-2                | Imagen: vrnetlab/cisco_iol:17.12.1
+  • clab-MPLS-P1                   | Imagen: vrnetlab/cisco_iol:17.12.1
+  • clab-MPLS-P2                   | Imagen: vrnetlab/cisco_iol:17.12.1
+  • clab-MPLS-PE1                  | Imagen: vrnetlab/cisco_iol:17.12.1
+  • clab-MPLS-PE2                  | Imagen: vrnetlab/cisco_iol:17.12.1
+  • clab-MPLS-RR1                  | Imagen: vrnetlab/cisco_iol:17.12.1
+  • clab-MPLS-RR2                  | Imagen: vrnetlab/cisco_iol:17.12.1
+
+SWITCHES (4):
+  • clab-MPLS-SW-1                 | Imagen: vrnetlab/cisco_iol:L2-17.12.1
+  • clab-MPLS-SW-2                 | Imagen: vrnetlab/cisco_iol:L2-17.12.1
+  • clab-MPLS-SW-LAN-1             | Imagen: vrnetlab/cisco_iol:L2-17.12.1
+  • clab-MPLS-SW-LAN-2             | Imagen: vrnetlab/cisco_iol:L2-17.12.1
