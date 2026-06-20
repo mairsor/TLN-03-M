@@ -1,0 +1,140 @@
+======================================================================
+REPORTE DE BÚSQUEDA DE COMANDOS
+======================================================================
+
+======================================================================
+Equipo : clab-MPLS-CPE-1
+Tipo   : router
+
+[NO ENCONTRADO] router ospf
+[NO ENCONTRADO] router bgp
+[NO ENCONTRADO] mpls ip
+[OK]            ip cef
+
+Resumen: 1/4 comandos encontrados.
+
+======================================================================
+Equipo : clab-MPLS-CPE-2
+Tipo   : router
+
+[NO ENCONTRADO] router ospf
+[NO ENCONTRADO] router bgp
+[NO ENCONTRADO] mpls ip
+[OK]            ip cef
+
+Resumen: 1/4 comandos encontrados.
+
+======================================================================
+Equipo : clab-MPLS-P1
+Tipo   : router
+
+[NO ENCONTRADO] router ospf
+[NO ENCONTRADO] router bgp
+[NO ENCONTRADO] mpls ip
+[OK]            ip cef
+
+Resumen: 1/4 comandos encontrados.
+
+======================================================================
+Equipo : clab-MPLS-P2
+Tipo   : router
+
+[NO ENCONTRADO] router ospf
+[NO ENCONTRADO] router bgp
+[NO ENCONTRADO] mpls ip
+[OK]            ip cef
+
+Resumen: 1/4 comandos encontrados.
+
+======================================================================
+Equipo : clab-MPLS-PE1
+Tipo   : router
+
+[NO ENCONTRADO] router ospf
+[NO ENCONTRADO] router bgp
+[NO ENCONTRADO] mpls ip
+[OK]            ip cef
+
+Resumen: 1/4 comandos encontrados.
+
+======================================================================
+Equipo : clab-MPLS-PE2
+Tipo   : router
+
+[NO ENCONTRADO] router ospf
+[NO ENCONTRADO] router bgp
+[NO ENCONTRADO] mpls ip
+[OK]            ip cef
+
+Resumen: 1/4 comandos encontrados.
+
+======================================================================
+Equipo : clab-MPLS-RR1
+Tipo   : router
+
+[NO ENCONTRADO] router ospf
+[NO ENCONTRADO] router bgp
+[NO ENCONTRADO] mpls ip
+[OK]            ip cef
+
+Resumen: 1/4 comandos encontrados.
+
+======================================================================
+Equipo : clab-MPLS-RR2
+Tipo   : router
+
+[NO ENCONTRADO] router ospf
+[NO ENCONTRADO] router bgp
+[NO ENCONTRADO] mpls ip
+[OK]            ip cef
+
+Resumen: 1/4 comandos encontrados.
+
+======================================================================
+Equipo : clab-MPLS-SW-1
+Tipo   : switch
+
+[OK]            spanning-tree mode
+[OK]            vlan
+[NO ENCONTRADO] switchport mode
+[NO ENCONTRADO] switchport access vlan
+[NO ENCONTRADO] switchport mode trunk
+
+Resumen: 2/5 comandos encontrados.
+
+======================================================================
+Equipo : clab-MPLS-SW-2
+Tipo   : switch
+
+[OK]            spanning-tree mode
+[OK]            vlan
+[NO ENCONTRADO] switchport mode
+[NO ENCONTRADO] switchport access vlan
+[NO ENCONTRADO] switchport mode trunk
+
+Resumen: 2/5 comandos encontrados.
+
+======================================================================
+Equipo : clab-MPLS-SW-LAN-1
+Tipo   : switch
+
+[OK]            spanning-tree mode
+[OK]            vlan
+[NO ENCONTRADO] switchport mode
+[NO ENCONTRADO] switchport access vlan
+[NO ENCONTRADO] switchport mode trunk
+
+Resumen: 2/5 comandos encontrados.
+
+======================================================================
+Equipo : clab-MPLS-SW-LAN-2
+Tipo   : switch
+
+[OK]            spanning-tree mode
+[OK]            vlan
+[NO ENCONTRADO] switchport mode
+[NO ENCONTRADO] switchport access vlan
+[NO ENCONTRADO] switchport mode trunk
+
+Resumen: 2/5 comandos encontrados.
+
