@@ -1,0 +1,62 @@
+{
+  "clab-MPLS-CPE-1": {
+    "timestamp": "2026-06-20T03:03:03.138659",
+    "running_config": null,
+    "status": "ERROR: Authentication to device failed.\n\nCommon causes of this problem are:\n1. Invalid username and password\n2. Incorrect SSH-key file\n3. Connecting to the wrong device\n\nDevice settings: cisco_ios clab-MPLS-CPE-1:22\n\n\nAuthentication timeout."
+  },
+  "clab-MPLS-CPE-2": {
+    "timestamp": "2026-06-20T03:03:33.671639",
+    "running_config": null,
+    "status": "ERROR: Authentication to device failed.\n\nCommon causes of this problem are:\n1. Invalid username and password\n2. Incorrect SSH-key file\n3. Connecting to the wrong device\n\nDevice settings: cisco_ios clab-MPLS-CPE-2:22\n\n\nAuthentication timeout."
+  },
+  "clab-MPLS-P1": {
+    "timestamp": "2026-06-20T03:04:04.699363",
+    "running_config": null,
+    "status": "ERROR: Authentication to device failed.\n\nCommon causes of this problem are:\n1. Invalid username and password\n2. Incorrect SSH-key file\n3. Connecting to the wrong device\n\nDevice settings: cisco_ios clab-MPLS-P1:22\n\n\nAuthentication timeout."
+  },
+  "clab-MPLS-P2": {
+    "timestamp": "2026-06-20T03:04:35.642316",
+    "running_config": null,
+    "status": "ERROR: Authentication to device failed.\n\nCommon causes of this problem are:\n1. Invalid username and password\n2. Incorrect SSH-key file\n3. Connecting to the wrong device\n\nDevice settings: cisco_ios clab-MPLS-P2:22\n\n\nAuthentication timeout."
+  },
+  "clab-MPLS-PE1": {
+    "timestamp": "2026-06-20T03:05:07.103652",
+    "running_config": null,
+    "status": "ERROR: Authentication to device failed.\n\nCommon causes of this problem are:\n1. Invalid username and password\n2. Incorrect SSH-key file\n3. Connecting to the wrong device\n\nDevice settings: cisco_ios clab-MPLS-PE1:22\n\n\nAuthentication timeout."
+  },
+  "clab-MPLS-PE2": {
+    "timestamp": "2026-06-20T03:05:38.927779",
+    "running_config": null,
+    "status": "ERROR: Authentication to device failed.\n\nCommon causes of this problem are:\n1. Invalid username and password\n2. Incorrect SSH-key file\n3. Connecting to the wrong device\n\nDevice settings: cisco_ios clab-MPLS-PE2:22\n\n\nAuthentication timeout."
+  },
+  "clab-MPLS-RR1": {
+    "timestamp": "2026-06-20T03:06:11.187747",
+    "running_config": null,
+    "status": "ERROR: Authentication to device failed.\n\nCommon causes of this problem are:\n1. Invalid username and password\n2. Incorrect SSH-key file\n3. Connecting to the wrong device\n\nDevice settings: cisco_ios clab-MPLS-RR1:22\n\n\nAuthentication timeout."
+  },
+  "clab-MPLS-RR2": {
+    "timestamp": "2026-06-20T03:06:43.039420",
+    "running_config": null,
+    "status": "ERROR: Authentication to device failed.\n\nCommon causes of this problem are:\n1. Invalid username and password\n2. Incorrect SSH-key file\n3. Connecting to the wrong device\n\nDevice settings: cisco_ios clab-MPLS-RR2:22\n\n\nAuthentication timeout."
+  },
+  "clab-MPLS-SW-1": {
+    "timestamp": "2026-06-20T03:07:14.396575",
+    "running_config": null,
+    "status": "ERROR: Authentication to device failed.\n\nCommon causes of this problem are:\n1. Invalid username and password\n2. Incorrect SSH-key file\n3. Connecting to the wrong device\n\nDevice settings: cisco_ios clab-MPLS-SW-1:22\n\n\nAuthentication timeout."
+  },
+  "clab-MPLS-SW-2": {
+    "timestamp": "2026-06-20T03:07:45.361596",
+    "running_config": null,
+    "status": "ERROR: Authentication to device failed.\n\nCommon causes of this problem are:\n1. Invalid username and password\n2. Incorrect SSH-key file\n3. Connecting to the wrong device\n\nDevice settings: cisco_ios clab-MPLS-SW-2:22\n\n\nAuthentication timeout."
+  },
+  "clab-MPLS-SW-LAN-1": {
+    "timestamp": "2026-06-20T03:08:17.733569",
+    "running_config": null,
+    "status": "ERROR: Authentication to device failed.\n\nCommon causes of this problem are:\n1. Invalid username and password\n2. Incorrect SSH-key file\n3. Connecting to the wrong device\n\nDevice settings: cisco_ios clab-MPLS-SW-LAN-1:22\n\n\nAuthentication timeout."
+  },
+  "clab-MPLS-SW-LAN-2": {
+    "timestamp": "2026-06-20T03:08:48.451247",
+    "running_config": null,
+    "status": "ERROR: Authentication to device failed.\n\nCommon causes of this problem are:\n1. Invalid username and password\n2. Incorrect SSH-key file\n3. Connecting to the wrong device\n\nDevice settings: cisco_ios clab-MPLS-SW-LAN-2:22\n\n\nAuthentication timeout."
+  }
+}
